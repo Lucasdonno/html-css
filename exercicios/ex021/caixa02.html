@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+         body {
+             font-family: sans-serif;
+             background-color: darkgray;
+             margin: 0px;
+         }
+         header {
+             background-color: white;
+             padding: 10px;
+             margin: 10px;
+         }
+
+         h1 {
+             box-shadow: 5px 3px 7px 1px black ;
+         }
+
+         nav {
+             background-color: rgb(133, 131, 131);
+             padding: 3px;
+             box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.486);
+         }
+
+         nav > a {
+             text-decoration: none;
+             color: white;
+             font-weight: bold;
+             margin: 165px;
+         }
+
+         nav > a:hover {
+             text-decoration: underline;
+         }
+
+         article {
+             background-color: lightgrey;
+             padding: 5px;
+
+         }
+
+         article > aside {
+             background-color: rgb(156, 156, 156);
+         }
+
+         main {
+             background-color: white;
+             padding: 10px;
+             margin: 10px;
+             border-radius: 10px;
+         }
+
+         footer {
+             background-color: black;
+             color: white;
+             text-align: center;
+             padding: 1px;
+             margin: 0px;
+         }
+
+         footer > p {
+             margin: 0px;
+         }
+         div#bola {
+             height: 100px;
+             width: 100px;
+             margin: 10px;
+             background-color: white;
+             border-radius: 50%;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Título do meu artigo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque modi, rem sed asperiores quas mollitia, nam provident totam accusantium consectetur? Reiciendis, totam iusto. Sit aliquid suscipit obcaecati facere quos.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Mendes</p>
+                </aside>
+            </article>
+            <article>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Lucas Mendes</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
