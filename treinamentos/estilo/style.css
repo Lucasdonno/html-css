@@ -18,7 +18,7 @@
 header {
     max-width: 100vw;
     background-color: var(--cor1);
-    height: 180px;
+    height: 70px;
     margin-bottom: -6vh;
     border-radius: 0px 0px 30px 30px;
     box-shadow: -9px 7px 36px -21px black;
@@ -38,6 +38,7 @@ header > h1 {
 
 nav.links {
     text-align: center;
+    padding: 15px;
 }
 
 nav.links > a {
@@ -59,11 +60,11 @@ nav.links > a:hover {
 
 main {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 125px;
     min-width: 300px;
     max-width: 500px;
     background-color: white;
-    margin-bottom: 81px;
+    margin-bottom: 95px;
     padding: 20px;
 }
 
@@ -71,6 +72,7 @@ main > h1 {
     margin: 10px;
     text-align: center;
     font-family: var(--fonte-destaque);
+    text-shadow: -1px 3px 10px rgba(0, 0, 0, 0.281);
 }
 
 img.lucas {
@@ -78,8 +80,6 @@ img.lucas {
     max-width: 350px;
     display: block;
     margin: auto;
-    border-radius: 80%;
-    box-shadow: 0px 0px 46px -20px black;
     margin-top: -1vh;
 }
 
@@ -97,8 +97,12 @@ main > p {
 p > a {
     font-family: var(--fonte-padrao);
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     text-decoration: none;
+}
+
+p > a:hover {
+    text-decoration: underline;
 }
 
 nav.projetos {
@@ -108,6 +112,7 @@ nav.projetos {
 
 nav.projetos > a:hover {
     background-color: var(--cor1);
+    color: var(--cor2);
     border-radius: 10px;
     transition-duration: 0.5s;
     margin: 2px;
@@ -115,11 +120,12 @@ nav.projetos > a:hover {
 }
 
 nav.projetos > a {
-    margin: 10px;
+    padding: 10px;
     text-decoration: none;
     font-family: var(--fonte-destaque);
     font-size: 3.5em;
     color: black;
+    text-shadow: -1px 3px 10px rgba(0, 0, 0, 0.281);
 }
 
 
