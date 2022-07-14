@@ -70,6 +70,9 @@ nav.navbar-transparente {
 .btn-branco {
     border: 2px solid white;
 }
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
 
 .btn-branco:hover {
     background-color: white;
