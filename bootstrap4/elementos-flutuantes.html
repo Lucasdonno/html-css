@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <title>Bootstrap - Elementos flutuantes</title>
+
+    <style>
+      #fixo {
+        margin: 1px;
+      }
+    </style>
   </head>
 
   <body style="margin-bottom: 200px;padding: 16px;">
@@ -21,7 +27,9 @@
     </div>
 
     <!-- Posicionamento fixo - top e bottom -->
-    <h1 class="bg-success fixed-bottom">Título do conteúdo fixo</h1>
+    <div id="fixo">
+      <h1 class="bg-success fixed-bottom" style="margin-bottom: 0px;">Título do conteúdo fixo</h1>
+    </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
 
     <!-- 
