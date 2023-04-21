@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&display=swap');
 
 :root {
-    --cor1:#0585C4;
+    --cor1: linear-gradient(90deg, #7600C9, violet);
     --cor2:white;
 
     --fonte-padrao:'Open Sans', sans-serif;
@@ -16,12 +16,7 @@
 }
 
 header {
-    max-width: 100vw;
-    background-color: var(--cor1);
-    height: 70px;
-    margin-bottom: -6vh;
-    border-radius: 0px 0px 30px 30px;
-    box-shadow: -9px 7px 36px -21px black;
+    
 }
 
 header > h1 {
@@ -37,7 +32,9 @@ header > h1 {
 
 
 body {
-    background-color: #0375AD;
+    /*background-image: url("../imagens/pexels-rakicevic-nenad-1274260.jpg");*/
+    background: #190B42;
+    background-size: cover;
 }
 
 nav.links {
@@ -67,7 +64,7 @@ main {
     margin-top: 125px;
     min-width: 300px;
     max-width: 500px;
-    background-color: #0375AD;
+    background-color: transparent;
     margin-bottom: 95px;
     padding: 20px;
 }
@@ -94,7 +91,7 @@ main > p {
     text-align: justify;
     max-width: 500px;
     min-width: 374px;
-    
+    font-weight: bold;
 }
 
 p > a {
@@ -133,12 +130,7 @@ nav.projetos > a {
 
 
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 10px;
-    border-top: 30px;
+
 }
 
 footer p {
