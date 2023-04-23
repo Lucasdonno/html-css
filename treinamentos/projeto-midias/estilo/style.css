@@ -14,7 +14,8 @@
 }
 
 body {
-    background-color: #190B42;;
+    background-color: #190B42;
+    overflow: hidden;
 
 }
 #parte1 {
@@ -30,6 +31,12 @@ body {
     height: 100vh;
     background-color: #190B42;
   }
+
+#parte3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #190B42;
+  }
 header {
 
 }
@@ -41,7 +48,7 @@ main {
 #mendes-dev {
     height: 88vh;
             background-image: url(../imagens/MENDES-DEV3.gif);
-            background-size: 350px;
+            background-size: 300px;
             background-repeat: no-repeat;
             background-position: center center;
 }
@@ -55,20 +62,26 @@ main > p {
     color: white;
     font-family: var(--fonte-padrao);
 }
+
+#linha-do-tempo {
+    height: 99vh;
+            background-image: url(../imagens/linha-do-tempo.gif);
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
 #eur {
     margin-bottom: 3px;
 }
 #apresentacao {
-    position: absolute;
     color: white;
     font-family: var(--fonte-padrao);
-    margin-top: 50px;
-    margin-left: 30vh;
-    margin-right: 30vh;
+    font-size: large;
+    margin-left: 50vh;
+    margin-right: 50vh;
 }
 
 #seta {
-    margin-bottom: 100px;
 }
 
 #seta > img:hover {
@@ -76,3 +89,42 @@ main > p {
     
 }
 
+#seta2 {
+    margin-top: 205px;
+}
+
+#seta2 > img:hover {
+    cursor: pointer;
+    
+}
+
+#ramo1 > img {
+    position: absolute;
+    bottom: -1050px;
+    left: 711px;
+}
+
+
+#ramo2 > img {
+    position: absolute;
+    bottom: -1250px;
+    right: 711px;
+}
+
+#ramo3 > img {
+    position: absolute;
+    bottom: -1390px;
+    left: 711px;
+}
+
+#ramo4 > img {
+    position: absolute;
+    bottom: -1050px;
+    left: 703px;
+}
+
+#ramo5 > img {
+    position: absolute;
+    bottom: -1050px;
+    left: 703px;
+}
