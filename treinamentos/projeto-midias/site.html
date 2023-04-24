@@ -14,16 +14,15 @@
         <header>
             <div style="position: fixed; top: 0; right: 0;">
                 <img src="imagens/lateral.gif" alt="Ícone" style="width: 100%; height: 100%; object-fit: cover;">
-              </div>
+            </div>
         </header>
         <main>
             <div id="mendes-dev">
             </div>
         </main>
         <footer>
-            <div>
-                <div style="position: fixed; bottom: 0; left: 0;">
-                    <img src="imagens/lateral2.gif" alt="Ícone" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: fixed; bottom: 0; left: 0;">
+                <img src="imagens/lateral2.gif" alt="Ícone" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div id="seta" class="d-flex justify-content-center container">
                 <img src="imagens/setagif.gif" onclick="scrollToParte2()" alt="seta" height="50px">
@@ -59,21 +58,23 @@
     <div id="parte3">
         <header>
         </header>
-        <div id="linha-do-tempo">
-            <main>
-                <div id="ramos" class="text-center">
-                    <div id="ramo1">
-                        <img src="imagens/ramo.png" onmouseover="" alt="" height="100px">
-                    </div>
-                    <div id="ramo2">
-                        <img src="imagens/ramoesquerda.png" alt="" height="100vh">
-                    </div>
-                    <div id="ramo3">
-                        <img src="imagens/ramo.png" alt="" height="100vh">
-                    </div>
+        <main>
+            <div id="linha-do-tempo">
+                <div id="ramo-principal">
+                    <img src="imagens/seta-.png" alt="" height="600px">
                 </div>
-            </main>
-        </div>
+                <div>
+                        <img src="imagens/bolinha.png" alt="" class="bolinha" height="50px" id="bolinha1">
+                        <img src="imagens/bolinha.png" alt="" height="50px" id="bolinha2">
+                        <img src="imagens/bolinha.png" alt="" height="50px" id="bolinha3">
+                </div>
+                <div>
+                    <img src="imagens/ramoesquerda.png" alt="" id="ramo1" height="225px" class="ramo">
+                    <img src="imagens/ramo.png" alt="" id="ramo2" height="225px">
+                    <img src="imagens/ramoesquerda.png" alt="" id="ramo3" height="225px">
+                </div>
+            </div>
+        </main>
         <footer>
         </footer>
     </div>
@@ -87,7 +88,37 @@
             parte3.scrollIntoView({ behavior: 'smooth' });
         }
 
+        const bolinhas = document.getElementById("bolinha1","bolinha2","bolinha3");
+        const bolinha1 = document.getElementById("bolinha1");
+        const bolinha2 = document.getElementById("bolinha2");
+        const bolinha3 = document.getElementById("bolinha3");
+        const ramo1 = document.getElementById("ramo1");
+        const ramo2 = document.getElementById("ramo2");
+        const ramo3 = document.getElementById("ramo3");
+
+        // Evento que aumenta o tamanho das bolinhas gradativamente
+        bolinhas.addEventListener("mouseenter", function() {
+            bolinhas.style.transform = "scale(1.2)";
+        });
+
+        bolinhas.addEventListener("mouseleave", function() {
+            bolinhas.style.transform = "scale(1)";
+        });
+
+        bolinha1.addEventListener("click", function() {
+            document.querySelector("#ramo1")
+                .classList.toggle("fade");
+        });
+
+        bolinha2.addEventListener("click", function() {
+            document.querySelector("#ramo2")
+                .classList.toggle("fade");
+        });
         
+        bolinha3.addEventListener("click", function() {
+            document.querySelector("#ramo3")
+                .classList.toggle("fade");
+        });
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

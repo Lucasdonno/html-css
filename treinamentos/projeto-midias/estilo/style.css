@@ -15,7 +15,7 @@
 
 body {
     background-color: #190B42;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 #parte1 {
@@ -63,13 +63,6 @@ main > p {
     font-family: var(--fonte-padrao);
 }
 
-#linha-do-tempo {
-    height: 99vh;
-            background-image: url(../imagens/linha-do-tempo.gif);
-            background-size: 300px;
-            background-repeat: no-repeat;
-            background-position: center center;
-}
 #eur {
     margin-bottom: 3px;
 }
@@ -81,50 +74,82 @@ main > p {
     margin-right: 50vh;
 }
 
-#seta {
-}
-
-#seta > img:hover {
+#seta,#seta2 > img:hover {
     cursor: pointer;
-    
 }
 
 #seta2 {
     margin-top: 205px;
 }
 
-#seta2 > img:hover {
-    cursor: pointer;
+#ramo-principal > img {
+    position: absolute;
+    left: 682px;
+    bottom: -1450px;
+}
+
+#ramo1 {
+    opacity: 0;
+    position: absolute;
+    bottom: -1075px;
+    left: 514px;
+}
+
+
+#ramo2 {
+    opacity: 0;
+    position: absolute;
+    bottom: -1249px;
+    left: 700px;
+}
+
+#ramo3 {
+    
+    position: absolute;
+    bottom: -1495px;
+    left: 514px;
     
 }
 
-#ramo1 > img {
-    position: absolute;
-    bottom: -1050px;
-    left: 711px;
+#ramo1,#ramo2,#ramo3 {
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+#ramo1.fade, #ramo2.fade, #ramo3.fade {
+    opacity: 1;
 }
 
 
-#ramo2 > img {
-    position: absolute;
-    bottom: -1250px;
-    right: 711px;
+#ramo1:hover, #ramo2:hover, #ramo3:hover {
+    cursor: pointer;
 }
 
-#ramo3 > img {
+#bolinha1 {
+    position: absolute;
+    bottom: -970px;
+    left: 695px;
+}
+
+#bolinha2 {
+    position: absolute;
+    bottom: -1180px;
+    left: 695px;
+}
+
+#bolinha3 {
     position: absolute;
     bottom: -1390px;
-    left: 711px;
+    left: 695px;
 }
 
-#ramo4 > img {
-    position: absolute;
-    bottom: -1050px;
-    left: 703px;
+#bolinha1, #bolinha2, #bolinha3 {
+    transition: transform 0.5s;
+    z-index: 2;
 }
 
-#ramo5 > img {
-    position: absolute;
-    bottom: -1050px;
-    left: 703px;
+#bolinha1:hover, #bolinha2:hover, #bolinha3:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
