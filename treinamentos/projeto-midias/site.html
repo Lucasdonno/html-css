@@ -1,127 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mendes Dev</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
+
 <body class="">
     <div id="parte1">
         <header>
-            <div style="position: fixed; top: 0; right: 0;">
-                <img src="imagens/lateral.gif" alt="Ícone" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
         </header>
         <main>
             <div id="mendes-dev">
+                <p class="text-center">Mendes Dev;</p>
             </div>
         </main>
-        <footer>
-            <div style="position: fixed; bottom: 0; left: 0;">
-                <img src="imagens/lateral2.gif" alt="Ícone" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div id="seta" class="d-flex justify-content-center container">
-                <img src="imagens/setagif.gif" onclick="scrollToParte2()" alt="seta" height="50px">
-            </div>
-        </footer>
+        <div id="seta1" class="d-flex justify-content-center container">
+            <img src="imagens/seta.png" onclick="clicaParaRolar2()" class="animacao" alt="seta" height="100px">
+        </div>
     </div>
     <div id="parte2">
-        <header>
-            <div class="text-center" id="eur">
-                <img src="imagens/eur2.png" alt="" width="25%" height="25%">
+        <div id="apresentacao">
+            <div class="text-center">
+                <img src="imagens/eur2.png" alt="minha-foto" id="minha-foto" width="20%" height="20%">
             </div>
-        </header>
-        <main>
-           <div id="apresentacao" class="text-center">
-                <p>Fala aí, tudo bem? Me chamo <strong>Lucas Mendes</strong>, tenho 26 anos e sou natural de São Paulo mas atualmente tô morando em São Lourenço da Mata, Pernambuco, desde fevereiro de 2023.</p>
-
-                <p>Clica na setinha aqui embaixo pra dar uma olhada em como foi minha trajetória no mercado de tecnologia até aqui. Espero que curta!</p>
-                    <!-- <p>Atualmente, trabalho como Gate Keeper na Ahreas Tecnologia e tenho como objetivo seguir carreira como Desenvolvedor Web Jr. Tenho conhecimentos em HTML5, CSS3 e Javascript.</p>
-                
-                    <p>Tenho oito anos de experiência no setor de tecnologia, tendo passado por empresas renomadas como Vale e Algar. Atuei por três anos na Algar, sendo um como técnico de suporte e dois como supervisor, prestando serviços para a Vale. A Algar é uma empresa de tecnologia que oferece serviços de telecomunicações, TI, gestão de clientes, entre outros. Já a Vale é uma empresa do setor de mineração e metais.</p>
-                
-                    <p>Atualmente, trabalho há quatro anos na Ahreas Tecnologia, onde atuei por um ano como técnico de suporte, um ano como Customer Success e dois anos como Gate Keeper. A Ahreas Tecnologia é uma empresa que atua em diversas áreas, incluindo soluções de software para o setor imobiliário. Atualmente, atuamos no desenvolvimento de soluções para gestão de locações, administração de condomínios, entre outros serviços voltados para o setor imobiliário. Como Gate Keeper, tenho a responsabilidade de garantir a segurança das soluções e serviços oferecidos pela empresa, o que me permite ter uma visão abrangente dos processos e tecnologias utilizadas no desenvolvimento de nossos produtos.</p>
-                
-                    <p>Estou sempre em busca de novos desafios e oportunidades para aprimorar meus conhecimentos e habilidades na área de desenvolvimento web.</p> -->
+            <div id="texto-apresentacao" class="text-center">
+                <p>Fala aí, tudo bem? Me chamo <span>Lucas Mendes</span>, tenho 26 anos e atualmente estou praticando meus conhecimentos em HTML, CSS e Javascript.</p>
+                <p>Clica na setinha aqui pra ver de forma interativa como foi minha jornada nos estudos até hoje.</p>
+                <p>Espero que curta!</p>
             </div>
-        </main>
+        </div>
         <footer>
+            <div>
+                <audio src="songs/transition-song.mp3" id="audio-seta"></audio>
+            </div>
             <div id="seta2" class="d-flex justify-content-center container">
-                <img src="imagens/setagif.gif" onclick="scrollToParte3()" alt="seta" height="50px">
+                <img src="imagens/seta.png" onclick="clicaParaRolar3()" class="animacao" alt="seta" height="100px">
             </div>
         </footer>
     </div>
     <div id="parte3">
-        <header>
-        </header>
-        <main>
-            <div id="linha-do-tempo">
-                <div id="ramo-principal">
-                    <img src="imagens/seta-.png" alt="" height="600px">
-                </div>
-                <div>
-                        <img src="imagens/bolinha.png" alt="" class="bolinha" height="50px" id="bolinha1">
-                        <img src="imagens/bolinha.png" alt="" height="50px" id="bolinha2">
-                        <img src="imagens/bolinha.png" alt="" height="50px" id="bolinha3">
-                </div>
-                <div>
-                    <img src="imagens/ramoesquerda.png" alt="" id="ramo1" height="225px" class="ramo">
-                    <img src="imagens/ramo.png" alt="" id="ramo2" height="225px">
-                    <img src="imagens/ramoesquerda.png" alt="" id="ramo3" height="225px">
-                </div>
-            </div>
-        </main>
-        <footer>
-        </footer>
+        <div>
+            <audio src="songs/start-song.mp3" id="audio-start"></audio>
+        </div>
+        <div class="d-flex justify-content-center container">
+            <img src="imagens/start.png" alt="" width="120px" class="start" id="start-button" onclick="playAudioStart()">
+        </div>
     </div>
-     <script>
-        function scrollToParte2() {
-            const parte2 = document.querySelector('#parte2');
-            parte2.scrollIntoView({ behavior: 'smooth' });
-        }
-        function scrollToParte3() {
-            const parte3 = document.querySelector('#parte3');
-            parte3.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        const bolinhas = document.getElementById("bolinha1","bolinha2","bolinha3");
-        const bolinha1 = document.getElementById("bolinha1");
-        const bolinha2 = document.getElementById("bolinha2");
-        const bolinha3 = document.getElementById("bolinha3");
-        const ramo1 = document.getElementById("ramo1");
-        const ramo2 = document.getElementById("ramo2");
-        const ramo3 = document.getElementById("ramo3");
-
-        // Evento que aumenta o tamanho das bolinhas gradativamente
-        bolinhas.addEventListener("mouseenter", function() {
-            bolinhas.style.transform = "scale(1.2)";
-        });
-
-        bolinhas.addEventListener("mouseleave", function() {
-            bolinhas.style.transform = "scale(1)";
-        });
-
-        bolinha1.addEventListener("click", function() {
-            document.querySelector("#ramo1")
-                .classList.toggle("fade");
-        });
-
-        bolinha2.addEventListener("click", function() {
-            document.querySelector("#ramo2")
-                .classList.toggle("fade");
-        });
-        
-        bolinha3.addEventListener("click", function() {
-            document.querySelector("#ramo3")
-                .classList.toggle("fade");
-        });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

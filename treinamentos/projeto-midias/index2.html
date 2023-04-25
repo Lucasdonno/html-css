@@ -17,9 +17,29 @@
         #container.fade {
             opacity: 1;
         }
+
+        @keyframes start {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .start {
+            animation: start 2s infinite;
+            animation-iteration-count: infinite;
+        }
     </style>
 </head>
 <body>
+    <div id="efeito">
+        <img src="imagens/start.png" alt="" width="100px" class="start">
+    </div>
     <div id="container">
         <p>meu primeiro efeito</p>
     </div>

@@ -1,11 +1,56 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@keyframes escrevendo {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes piscando {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes subirDescer {
+    0% { top: 0; }
+    50% { top: -20px; }
+    100% { top: 0; }
+}
+
+@keyframes start {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes desintegrar {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      transform: scale(2);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(3);
+    }
+  }
 
 :root {
-
-    --fonte-padrao:'Open Sans', sans-serif;
-    --fonte-destaque:'Koulen', cursive;
+    --fonte-letreiro: 'Press Start 2P', cursive;
+    --fonte-padrao: 'Open Sans', sans-serif;
+    --fonte-destaque: 'Koulen', cursive;
 }
 
 * {
@@ -16,140 +61,91 @@
 body {
     background-color: #190B42;
     /* overflow: hidden; */
-
-}
-#parte1 {
-    width: 100%;
-    height: 100vh;
-    background-color: #190B42;
-    
-
 }
 
-#parte2 {
-    width: 100%;
-    height: 100vh;
-    background-color: #190B42;
-  }
-
+#parte1,
+#parte2,
 #parte3 {
-    width: 100%;
     height: 100vh;
-    background-color: #190B42;
-  }
-header {
-
-}
-
-main {
-
 }
 
 #mendes-dev {
-    height: 88vh;
-            background-image: url(../imagens/MENDES-DEV3.gif);
-            background-size: 300px;
-            background-repeat: no-repeat;
-            background-position: center center;
-}
-
-main > h1 {
+    font-family: var(--fonte-letreiro);
+    font-size: 40px;
+    position: absolute;
+    bottom: 350px;
+    left: 480px;
     color: white;
-    font-family: var(--fonte-destaque);
+    border-radius: 4px solid;
+    width: 11ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: escrevendo 1.2s steps(11),
+        piscando 0.7s infinite step-end alternate;
 }
 
-main > p {
+.animacao {
+    position: relative;
+    animation-name: subirDescer;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.start {
+    animation: start 2s infinite;
+    animation-iteration-count: infinite;
+}
+
+
+#minha-foto {
+    margin: 0 40% 0 40%;
+}
+
+#texto-apresentacao {
     color: white;
-    font-family: var(--fonte-padrao);
+    text-shadow: 3px 3px 3px black;
+    font-family: var(--fonte-letreiro);
+    font-size: medium;
+    bottom: -500px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 10px;
 }
 
-#eur {
-    margin-bottom: 3px;
-}
-#apresentacao {
-    color: white;
-    font-family: var(--fonte-padrao);
-    font-size: large;
-    margin-left: 50vh;
-    margin-right: 50vh;
+p span {
+    color: goldenrod;
 }
 
-#seta,#seta2 > img:hover {
-    cursor: pointer;
+#seta1 {
+    position: absolute;
+    bottom: 35px;
+    left: 110px;
 }
 
 #seta2 {
-    margin-top: 205px;
-}
-
-#ramo-principal > img {
     position: absolute;
-    left: 682px;
-    bottom: -1450px;
+    bottom: -725px;
+    left: 110px;
 }
 
-#ramo1 {
-    opacity: 0;
+#seta1,
+#seta2 > img:hover {
+    cursor: pointer;
+}
+
+
+#start-button {
     position: absolute;
-    bottom: -1075px;
-    left: 514px;
-}
-
-
-#ramo2 {
-    opacity: 0;
-    position: absolute;
-    bottom: -1249px;
-    left: 700px;
-}
-
-#ramo3 {
-    
-    position: absolute;
-    bottom: -1495px;
-    left: 514px;
-    
-}
-
-#ramo1,#ramo2,#ramo3 {
-    z-index: 1;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-}
-
-#ramo1.fade, #ramo2.fade, #ramo3.fade {
+    margin-top: 40px;
+    object-fit: cover;
     opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
+.desintegrar {
+    animation: desintegrar 1s ease-in-out forwards;
+}
 
-#ramo1:hover, #ramo2:hover, #ramo3:hover {
+#start-button:hover {
     cursor: pointer;
-}
-
-#bolinha1 {
-    position: absolute;
-    bottom: -970px;
-    left: 695px;
-}
-
-#bolinha2 {
-    position: absolute;
-    bottom: -1180px;
-    left: 695px;
-}
-
-#bolinha3 {
-    position: absolute;
-    bottom: -1390px;
-    left: 695px;
-}
-
-#bolinha1, #bolinha2, #bolinha3 {
-    transition: transform 0.5s;
-    z-index: 2;
-}
-
-#bolinha1:hover, #bolinha2:hover, #bolinha3:hover {
-    cursor: pointer;
-    transform: scale(1.2);
 }
