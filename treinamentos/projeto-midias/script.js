@@ -41,5 +41,9 @@ startButton.addEventListener('click', () => {
     startButton.classList.add('desintegrar');
 });
 
-
+startButton.addEventListener('click', function() {
+    setTimeout(function() {
+        window.location.href ="jogo.html";
+    }, 2300)
+})
 

@@ -69,9 +69,46 @@ body {
     height: 100vh;
 }
 
+.nuvens {
+    width: 17%;
+}
+
+#nuvem-fina-1 {
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+#nuvem-fina-2 {
+    position: relative;
+    left: 20px;
+    top: 70px;
+}
+#nuvem-fina-3 {
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+
+#nuvem-fina-1 {
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+#nuvem-fina-2 {
+    position: relative;
+    left: 20px;
+    top: 70px;
+}
+#nuvem-fina-3 {
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+
 #mendes-dev {
     font-family: var(--fonte-letreiro);
     font-size: 40px;
+    text-shadow: 3px 3px 3px black;
     position: absolute;
     bottom: 350px;
     left: 480px;
@@ -136,7 +173,7 @@ p span {
 
 #start-button {
     position: absolute;
-    margin-top: 40px;
+    bottom: -1200px;
     object-fit: cover;
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -148,4 +185,8 @@ p span {
 
 #start-button:hover {
     cursor: pointer;
+}
+
+#imagem-chao {
+    
 }

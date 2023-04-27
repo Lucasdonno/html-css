@@ -13,11 +13,17 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 
-<body class="">
+<body>
     <div id="parte1">
-        <header>
-        </header>
         <main>
+            <div>
+                <img src="imagens/nuvem-maior-1.png" alt="" class="nuvens" id="nuvem-maior-1">
+                <img src="imagens/nuvem-fina-1.png" alt="" class="nuvens" id="nuvem-fina-1">
+                <img src="imagens/nuvem-maior-2.png" alt="" class="nuvens" id="nuvem-maior-2">
+                <img src="imagens/nuvem-fina-2.png" alt="" class="nuvens" id="nuvem-fina-2">
+                <img src="imagens/nuvem-maior-3.png" alt="" class="nuvens" id="nuvem-maior-3">
+                <img src="imagens/nuvem-fina-3.png" alt="" class="nuvens" id="nuvem-fina-3">
+            </div>
             <div id="mendes-dev">
                 <p class="text-center">Mendes Dev;</p>
             </div>
@@ -28,8 +34,8 @@
     </div>
     <div id="parte2">
         <div id="apresentacao">
-            <div class="text-center">
-                <img src="imagens/eur2.png" alt="minha-foto" id="minha-foto" width="20%" height="20%">
+            <div>
+                <img src="imagens/eur2.png" alt="minha-foto" id="minha-foto" class="text-center" width="20%" height="20%">
             </div>
             <div id="texto-apresentacao" class="text-center">
                 <p>Fala aí, tudo bem? Me chamo <span>Lucas Mendes</span>, tenho 26 anos e atualmente estou praticando meus conhecimentos em HTML, CSS e Javascript.</p>
@@ -37,21 +43,21 @@
                 <p>Espero que curta!</p>
             </div>
         </div>
-        <footer>
+        <div id="setas">
             <div>
                 <audio src="songs/transition-song.mp3" id="audio-seta"></audio>
             </div>
             <div id="seta2" class="d-flex justify-content-center container">
                 <img src="imagens/seta.png" onclick="clicaParaRolar3()" class="animacao" alt="seta" height="100px">
             </div>
-        </footer>
+        </div>
     </div>
     <div id="parte3">
         <div>
             <audio src="songs/start-song.mp3" id="audio-start"></audio>
         </div>
         <div class="d-flex justify-content-center container">
-            <img src="imagens/start.png" alt="" width="120px" class="start" id="start-button" onclick="playAudioStart()">
+            <img src="imagens/start.png" alt="" width="300px" class="start" id="start-button" onclick="playAudioStart()">
         </div>
     </div>
     <script src="script.js"></script>
