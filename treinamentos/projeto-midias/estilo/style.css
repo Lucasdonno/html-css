@@ -105,6 +105,12 @@ body {
     top: 30px;
 }
 
+#nuvem-fina-4 {
+    position: relative;
+    left: 800px;
+    top: 30px;
+}
+
 #mendes-dev {
     font-family: var(--fonte-letreiro);
     font-size: 40px;
